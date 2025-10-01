@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Crumbs Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="has-announcement">
+  <!-- Announcement / Sales Banner -->
+  <div class="announcement-bar" role="region" aria-label="Promotions">
+    <div class="ticker-track">
+      <div class="ticker-list">
+        <span>🥐 Weekend Special: 2-for-1 Croissants!</span>
+        <span>•</span>
+        <span>🎂 Book Custom Cakes 2 Weeks in Advance</span>
+        <span>•</span>
+        <span>☕ Free Coffee w/ Any Pastry — Mon 8–10am</span>
+        <span>•</span>
+        <span>🍪 New! Gluten-Free Cookies Available Daily</span>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="ticker-list" aria-hidden="true">
+        <span>🥐 Weekend Special: 2-for-1 Croissants!</span>
+        <span>•</span>
+        <span>🎂 Book Custom Cakes 2 Weeks in Advance</span>
+        <span>•</span>
+        <span>☕ Free Coffee w/ Any Pastry — Mon 8–10am</span>
+        <span>•</span>
+        <span>🍪 New! Gluten-Free Cookies Available Daily</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+  <div class="nav-left">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    </ul>
+  </div>
+
+  <div class="logo">
+    <img src="images/logo.png" alt="Sweet Crumbs Logo" class="logo-image">
+  </div>
+
+  <div class="nav-right">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <a href="order.html" class="cart-icon">
+    <span id="cartCount">0</span>
+    <img src="images/box.png" alt="Bakery Box" class="bakery-box-icon">
+  </a>
+
+  <div class="menu-toggle">☰</div>
+</header>
+
+
+
+  <section class="landing-section">
+    <h1 class="welcome-text">Welcome to Sweet Crumbs Bakery!</h1>
+  </section>  
+
+  <section class="creative-divider">
+  <img src="images/banner.png" alt="Icing Decoration" class="section-banner">
+</section>
+
+
+ <!-- About Me Section -->
+<section id="about" class="about-section">
+    <div class="about-content">
+      <div class="about-left">
+        <img src="images/me.png" alt="Bakery Owner" class="about-me">
+      </div>
+      <div class="about-right">
+        <h2>About Sweet Crumbs</h2>
+        <p>
+          Welcome to Sweet Crumbs Bakery! We are passionate about creating
+          delicious pastries, cakes, breads, and desserts that bring joy to
+          every bite. Our bakery has been a local favorite for years, dedicated
+          to using the freshest ingredients and traditional baking techniques.
+        </p>
+        <p>
+          Our mission is to make every visit a sweet experience, whether you're
+          stopping by for your morning treat or ordering online for a special
+          occasion. We believe in spreading happiness, one pastry at a time!
+        </p>
+      </div>
+    </div>
+  
+    <!-- Floating pastry images in background -->
+    <img src="images/cupcake.png" class="floating-pastry" style="top:10%; left:10%; animation-duration:8s;">
+    <img src="images/croissant.png" class="floating-pastry" style="top:30%; left:70%; animation-duration:12s;">
+    <img src="images/donut.png" class="floating-pastry" style="top:50%; left:40%; animation-duration:10s;">
+    <img src="images/bread.png" class="floating-pastry" style="top:70%; left:20%; animation-duration:9s;">
+    <img src="images/macaroon.png" class="floating-pastry" style="top:20%; left:80%; animation-duration:11s;">
+    <img src="images/cookie.png" class="floating-pastry" style="top:60%; left:60%; animation-duration:13s;">
+    <img src="images/eclair.png" class="floating-pastry" style="top:40%; left:10%; animation-duration:12s;">
+  </section>
+</html>  

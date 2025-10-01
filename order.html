@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online - Sweet Crumbs Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="has-announcement">
+  <!-- Announcement / Sales Banner -->
+  <div class="announcement-bar" role="region" aria-label="Promotions">
+    <div class="ticker-track">
+      <div class="ticker-list">
+        <span>🥐 Weekend Special: 2-for-1 Croissants!</span>
+        <span>•</span>
+        <span>🎂 Book Custom Cakes 2 Weeks in Advance</span>
+        <span>•</span>
+        <span>☕ Free Coffee w/ Any Pastry — Mon 8–10am</span>
+        <span>•</span>
+        <span>🍪 New! Gluten-Free Cookies Available Daily</span>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="ticker-list" aria-hidden="true">
+        <span>🥐 Weekend Special: 2-for-1 Croissants!</span>
+        <span>•</span>
+        <span>🎂 Book Custom Cakes 2 Weeks in Advance</span>
+        <span>•</span>
+        <span>☕ Free Coffee w/ Any Pastry — Mon 8–10am</span>
+        <span>•</span>
+        <span>🍪 New! Gluten-Free Cookies Available Daily</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+  <div class="nav-left">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    </ul>
+  </div>
+
+  <div class="logo">
+    <img src="images/logo.png" alt="Sweet Crumbs Logo" class="logo-image">
+  </div>
+
+  <div class="nav-right">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <a href="order.html" class="cart-icon">
+    <span id="cartCount">0</span>
+    <img src="images/box.png" alt="Bakery Box" class="bakery-box-icon">
+  </a>
+
+  <div class="menu-toggle">☰</div>
+</header>
+
+  <!-- Order Form Section -->
+  <section class="order-page">
+    <h1>Checkout Your Order</h1>
+
+    <!-- Cart Items Display -->
+    <div class="cart-summary">
+      <h2>Your Cart Items</h2>
+      <ul id="orderCartItems"></ul>
+    </div>
+
+    <!-- Delivery Form -->
+    <div class="order-form">
+      <h2>Delivery Information</h2>
+      <form id="checkoutForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="address" placeholder="Delivery Address" required>
+        <button type="submit" class="btn">Place Order</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

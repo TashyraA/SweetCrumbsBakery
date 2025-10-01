@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Sweet Crumbs Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="has-announcement">
+  <!-- Announcement / Sales Banner -->
+  <div class="announcement-bar" role="region" aria-label="Promotions">
+    <div class="ticker-track">
+      <div class="ticker-list">
+        <span>🥐 Weekend Special: 2-for-1 Croissants!</span>
+        <span>•</span>
+        <span>🎂 Book Custom Cakes 2 Weeks in Advance</span>
+        <span>•</span>
+        <span>☕ Free Coffee w/ Any Pastry — Mon 8–10am</span>
+        <span>•</span>
+        <span>🍪 New! Gluten-Free Cookies Available Daily</span>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="ticker-list" aria-hidden="true">
+        <span>🥐 Weekend Special: 2-for-1 Croissants!</span>
+        <span>•</span>
+        <span>🎂 Book Custom Cakes 2 Weeks in Advance</span>
+        <span>•</span>
+        <span>☕ Free Coffee w/ Any Pastry — Mon 8–10am</span>
+        <span>•</span>
+        <span>🍪 New! Gluten-Free Cookies Available Daily</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+  <div class="nav-left">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    </ul>
+  </div>
+
+  <div class="logo">
+    <img src="images/logo.png" alt="Sweet Crumbs Logo" class="logo-image">
+  </div>
+
+  <div class="nav-right">
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <a href="order.html" class="cart-icon">
+    <span id="cartCount">0</span>
+    <img src="images/box.png" alt="Bakery Box" class="bakery-box-icon">
+  </a>
+
+  <div class="menu-toggle">☰</div>
+</header>
+
+
+  <!-- Menu Section -->
+  <section class="menu-page">
+    <h1>Our Menu</h1>
+
+    <div class="menu-categories">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="cakes">Cakes</button>
+      <button class="category-btn" data-category="cupcakes">Cupcakes</button>
+      <button class="category-btn" data-category="bread">Bread</button>
+      <button class="category-btn" data-category="pastries">Pastries</button>
+    </div>
+
+    <div class="menu-grid">
+  <!-- Cakes -->
+  <div class="menu-item" data-id="1" data-name="Red Velvet Cake" data-price="29" data-category="cakes">
+    <img src="images/RedVelvetCake.jpg" alt="Red Velvet Cake">
+    <h3>Red Velvet Cake</h3>
+    <p>Moist cake with a hint of cocoa and cream cheese frosting.</p>
+    <p class="price">$29.00</p>
+    <div class="qty-box">
+      <button class="qty-btn dec">–</button>
+      <span class="qty">1</span>
+      <button class="qty-btn inc">+</button>
+    </div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <div class="menu-item" data-id="2" data-name="Chocolate Cake" data-price="35" data-category="cakes">
+    <img src="images/ChocolateCake.jpg" alt="Chocolate Cake">
+    <h3>Chocolate Cake</h3>
+    <p>Rich chocolate cake topped with ganache.</p>
+    <p class="price">$35.00</p>
+    <div class="qty-box">
+      <button class="qty-btn dec">–</button>
+      <span class="qty">1</span>
+      <button class="qty-btn inc">+</button>
+    </div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <!-- Cupcakes -->
+  <div class="menu-item" data-id="3" data-name="Chocolate Cupcake" data-price="6" data-category="cupcakes">
+    <img src="images/ChocolateCupcake.jpg" alt="Chocolate Cupcake">
+    <h3>Chocolate Cupcake</h3>
+    <p>Rich chocolate cupcake topped with creamy frosting.</p>
+    <p class="price">$6.00</p>
+    <div class="qty-box">
+      <button class="qty-btn dec">–</button>
+      <span class="qty">1</span>
+      <button class="qty-btn inc">+</button>
+    </div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <div class="menu-item" data-id="4" data-name="Strawberry Cupcake" data-price="6" data-category="cupcakes">
+    <img src="images/StrawberryCupcake.jpg" alt="Strawberry Cupcake">
+    <h3>Strawberry Cupcake</h3>
+    <p>Vanilla cupcake with fresh strawberry frosting.</p>
+    <p class="price">$6.00</p>
+    <div class="qty-box">
+      <button class="qty-btn dec">–</button>
+      <span class="qty">1</span>
+      <button class="qty-btn inc">+</button>
+    </div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <!-- Bread -->
+  <div class="menu-item" data-id="5" data-name="Sourdough Bread" data-price="8" data-category="bread">
+    <img src="images/SourdoughBread.jpg" alt="Sourdough Bread">
+    <h3>Sourdough Bread</h3>
+    <p>Classic sourdough loaf with a crispy crust.</p>
+    <p class="price">$8.00</p>
+    <div class="qty-box">
+      <button class="qty-btn dec">–</button>
+      <span class="qty">1</span>
+      <button class="qty-btn inc">+</button>
+    </div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+
+  <!-- Pastries -->
+  <div class="menu-item" data-id="6" data-name="Butter Croissant" data-price="4" data-category="pastries">
+    <img src="images/Croissant.jpg" alt="Butter Croissant">
+    <h3>Butter Croissant</h3>
+    <p>Flaky, buttery layers baked to perfection.</p>
+    <p class="price">$4.00</p>
+    <div class="qty-box">
+      <button class="qty-btn dec">–</button>
+      <span class="qty">1</span>
+      <button class="qty-btn inc">+</button>
+    </div>
+    <button class="add-btn">Add to Cart</button>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Drawer Cart + Backdrop (new) -->
+  <div id="cartBackdrop" class="cart-backdrop"></div>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <h3>Your cart</h3>
+      <button id="closeDrawer" class="icon-btn" aria-label="Close">✕</button>
+    </div>
+
+    <div class="drawer-headings">
+      <span>Product</span>
+      <span>Total</span>
+    </div>
+
+    <div id="drawerBody" class="drawer-body">
+      <ul id="cartList" class="cart-lines"></ul>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="subtotal">
+        <span>Estimated total</span>
+        <strong id="subtotalAmount">$0.00</strong>
+      </div>
+      <p class="tiny-note">Taxes, discounts and shipping calculated at checkout.</p>
+      <button id="drawerCheckout" class="btn">Check out</button>
+    </div>
+  </aside>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
